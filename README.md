@@ -1,39 +1,112 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# border_beam
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A lightweight and customizable Flutter widget that adds a glowing, animated border beam around any widget — perfect for highlighting cards, buttons, or containers in a modern and dynamic way.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+This package is ideal for developers who want to make elements stand out in their Flutter apps with beautiful, animated border effects using gradient beams.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+---
 
-## Features
+## ✨ Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Animated gradient border effect.
+- Fully customizable colors, width, duration, and border radius.
+- Static border color behind the animation.
+- Smooth looping animation.
+- Easy integration into any Flutter layout.
 
-## Getting started
+---
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 🚀 Getting Started
+
+### 1. Add dependency
+
+Add this to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  border_beam: ^0.0.1
+```
+
+then run:
+
+```yaml
+flutter pub get
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+import 'package:border_beam/border_beam.dart';
+
+BorderBeam(
+padding: EdgeInsets.all(16),
+borderRadius: BorderRadius.circular(16),
+borderWidth: 2,
+colorFrom: Colors.blue,
+colorTo: Colors.purple,
+child: Text(
+"Glowing Text",
+style: TextStyle(color: Colors.white),
+),
+);
 ```
 
-## Additional information
+You can also use it to wrap any widget (like a button, container, or even an image):
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+BorderBeam(
+borderRadius: BorderRadius.circular(12),
+colorFrom: Colors.green,
+colorTo: Colors.tealAccent,
+child: ElevatedButton(
+onPressed: () {},
+child: Text('Click Me'),
+),
+);
+```
+
+## Example
+
+```dart
+import 'package:saudi_currency_symbol/saudi_currency_symbol.dart';
+import 'package:flutter/material.dart';
+
+MaterialApp(
+  home: Scaffold(
+    body: Center(
+      child: BorderBeam(
+                borderRadius: BorderRadius.circular(12),
+                colorFrom: Colors.green,
+                colorTo: Colors.tealAccent,
+                child: Container(
+                child: Text('Click Me'),
+                ),
+        ),
+    ),
+  ),
+);
+```
+
+## Preview
+
+![Preview](https://firebasestorage.googleapis.com/v0/b/drixion-a5be1.appspot.com/o/symbol.png?alt=media&token=0ec3ff02-09da-4f8d-a700-a5a6595cde1c)
+
+## 📮 Contributing
+
+- Pull requests are welcome. For major changes, please open an issue first to discuss what you would
+  like to change.
+
+- If you find a bug or have a feature request, feel free to open an issue.
+
+## 💬 Support
+
+- To contrib to this project, you can open a PR or an issue.
+
+## 👨‍💻 Author
+
+<a href="https://github.com/3boodev">Abdullah Alamary</a>
+
+## 🏷 License
+
+- This project is licensed under <a href="https://opensource.org/license/MIT">MIT License</a>.
+
