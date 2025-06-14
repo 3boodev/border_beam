@@ -89,7 +89,7 @@ MaterialApp(
 
 ## Preview
 
-![Preview](https://firebasestorage.googleapis.com/v0/b/drixion-a5be1.appspot.com/border_bem.gif?alt=media&token=0ec3ff02-09da-4f8d-a700-a5a6595cde1c) 
+![Preview](https://firebasestorage.googleapis.com/v0/b/drixion-a5be1.appspot.com/o/border_bem.gif?alt=media&token=926b514e-7b80-473a-a611-4e496051dba1) 
 ## 📮 Contributing
 
 - Pull requests are welcome. For major changes, please open an issue first to discuss what you would
