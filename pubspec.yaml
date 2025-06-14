@@ -1,10 +1,10 @@
 name: border_beam
 description: "A customizable Flutter widget that draws an animated gradient beam around a child widget."
 version: 0.0.1
-repository:
+repository: https://github.com/3boodev/border_beam
 
 environment:
-  sdk: ^3.8.1
+  sdk: ^3.4.1
   flutter: ">=1.17.0"
 
 dependencies:
